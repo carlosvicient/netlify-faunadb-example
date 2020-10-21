@@ -6,19 +6,21 @@ Example of using [FaunaDB](https://fauna.com/) with [Netlify functions](https://
 <details>
 <summary>Expand Table of Contents</summary>
 
-- [About this application](#about-this-application)
-- [Setup &amp; Run Locally](#setup--run-locally)
-- [TLDR; Quick Deploy](#tldr-quick-deploy)
-- [Tutorial](#tutorial)
-  * [Background](#background)
-  * [1. Create React app](#1-create-react-app)
-  * [2. Set up FaunaDB](#2-set-up-faunadb)
-  * [3. Create a function](#3-create-a-function)
-    + [Anatomy of a Lambda function](#anatomy-of-a-lambda-function)
-    + [Setting up functions for local development](#setting-up-functions-for-local-development)
-  * [4. Connect the function to the frontend app](#4-connect-the-function-to-the-frontend-app)
-  * [5. Finishing the backend Functions](#5-finishing-the-backend-functions)
-  * [Wrapping Up](#wrapping-up)
+- [Netlify + FaunaDB &nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-faunadb-example&stack=fauna"><img src="https://www.netlify.com/img/deploy/button.svg"></a>](#netlify--faunadb-img-srchttpswwwnetlifycomimgdeploybuttonsvg)
+  - [About this application](#about-this-application)
+  - [Deploy with one click](#deploy-with-one-click)
+  - [Setup & Run Locally](#setup--run-locally)
+  - [TLDR; Quick Deploy](#tldr-quick-deploy)
+  - [Tutorial](#tutorial)
+    - [Background](#background)
+    - [1. Create React app](#1-create-react-app)
+    - [2. Set up FaunaDB](#2-set-up-faunadb)
+    - [3. Create a function](#3-create-a-function)
+      - [Anatomy of a Lambda function](#anatomy-of-a-lambda-function)
+      - [Setting up functions for local development](#setting-up-functions-for-local-development)
+    - [4. Connect the function to the frontend app](#4-connect-the-function-to-the-frontend-app)
+    - [5. Finishing the backend Functions](#5-finishing-the-backend-functions)
+    - [Wrapping Up](#wrapping-up)
 
 </details>
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -695,3 +697,9 @@ This example can be improved with users/authentication. Next steps to build out 
 - Wire up authentication using the JSON web token-based [Netlify Identity](https://identity.netlify.com/)
 - Add in due dates to todos and wire up Functions to notify users via email/SMS
 - File for IPO?
+
+
+
+
+Secret: fnAD4rEubMACBy1KhezHsk0YfnOvUKlSf6Z9mmyc
+export FAUNADB_SERVER_SECRET=YourFaunaDBSecretHere
