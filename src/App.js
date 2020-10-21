@@ -318,7 +318,7 @@ export default class App extends Component {
       <div className='app'>
 
         <AppHeader />
-        <p><a href="#" onClick={this.handleIdentity}>User Status</a></p>
+        <p><a href="#home" onClick={this.handleIdentity}>User Status</a></p>
 
 
         <div className='todo-list'>
