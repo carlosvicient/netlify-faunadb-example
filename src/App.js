@@ -351,7 +351,9 @@ export default class App extends Component {
           handleModalClose={this.closeModal}
           handleClearCompleted={this.clearCompleted}
         />
-        <DashboardUsers/>
+        {netlifyIdentity.currentUser() && netlifyIdentity.currentUser().jwt() &&
+          <DashboardUsers/>
+        }
       </div>
     )
   }
