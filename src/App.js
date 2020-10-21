@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import netlifyIdentity from "netlify-identity-widget"
+
 import ContentEditable from './components/ContentEditable'
 import AppHeader from './components/AppHeader'
 import SettingsMenu from './components/SettingsMenu'
@@ -15,6 +17,9 @@ export default class App extends Component {
     showMenu: false
   }
   componentDidMount() {
+
+    // Load/init the netlify idendity library
+    netlifyIdentity.init();
 
     /* Track a page view */
     analytics.page()
@@ -247,6 +252,12 @@ export default class App extends Component {
       category: 'modal'
     })
   }
+
+  handleIdentity = (e) => {
+    e.preventDefault();
+    netlifyIdentity.open();
+  }
+
   renderTodos() {
     const { todos } = this.state
 
@@ -307,6 +318,8 @@ export default class App extends Component {
       <div className='app'>
 
         <AppHeader />
+        <p><a href="#" onClick={this.handleIdentity}>User Status</a></p>
+
 
         <div className='todo-list'>
           <h2>
