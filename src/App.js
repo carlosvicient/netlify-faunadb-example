@@ -5,6 +5,7 @@ import ContentEditable from './components/ContentEditable'
 import AppHeader from './components/AppHeader'
 import SettingsMenu from './components/SettingsMenu'
 import SettingsIcon from './components/SettingsIcon'
+import DashboardUsers from './components/DashboardUsers'
 import analytics from './utils/analytics'
 import api from './utils/api'
 import sortByDate from './utils/sortByDate'
@@ -350,6 +351,7 @@ export default class App extends Component {
           handleModalClose={this.closeModal}
           handleClearCompleted={this.clearCompleted}
         />
+        <DashboardUsers/>
       </div>
     )
   }
